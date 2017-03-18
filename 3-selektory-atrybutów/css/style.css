@@ -1,0 +1,33 @@
+a {
+    font-size: 3em;
+}
+
+/* Wyświetla selektor z wartością 'title' na czerwono */
+a[title] {
+    color: red;
+}
+
+/* Wyświetla kolor dla atrybutu z Linku 5 */
+a[title="Link 5"] {
+    color: green;
+}
+
+/* Występuje i nadaje kolor atrybutom z 'title' i  z ciągiem znaków "Link" i oddzielony od innych znaków spacją*/
+a[title~="Link"] {
+    color: yellow;
+}
+
+/* Koloruje tylko linki, które mają ciąg znaków '.pl' */
+a[href*=".pl"] {
+    color: orange;
+}
+
+/* Tylko element który zaczyna się od litery "T" będą miały poniższy kolor */
+a[title^="T"] {
+    color: blueviolet;
+}
+
+/* Element, który konczy się '.com' przybiera poniższy kolor */
+a[href$=".com"] {
+    color: palegreen;
+}
