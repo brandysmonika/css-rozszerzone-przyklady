@@ -1,0 +1,23 @@
+body {
+    height: 600px;
+    width: 600px;
+}
+
+p {
+    width: 50%;
+    float: left;
+    height: 300px;
+    overflow: hidden; /* Uciena paragraf */
+}
+
+p:nth-child(2) {
+    overflow: scroll; /* Ustawia scrolla do paragrafu w szer. i wys. */
+}
+
+p:nth-child(3) {
+    overflow: auto; /* Ustawia scrolla do paragrafu w wys. */
+}
+
+p:nth-child(4) {
+    overflow: visible; /* Działa domyslnie, nakłada się na txt poniżej */
+}

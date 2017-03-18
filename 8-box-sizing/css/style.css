@@ -1,0 +1,26 @@
+* {
+    box-sizing: content-box; /* Dzieki formule elementy nie bedą się rozjeżdzać - opcja nie działa na marginesy */
+}
+
+body {
+    margin: 0;
+}
+
+.col-1-2 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box; /* padding łapie się do wysokości */
+    border: 20px solid black;
+}
+
+.col-1-2:first-child {
+    background-color: beige;
+}
+
+.col-1-2:last-child {
+    background-color: darksalmon;
+}
+
+
+
